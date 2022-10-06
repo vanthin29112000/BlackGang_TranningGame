@@ -1,0 +1,94 @@
+.play-bif{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.play-bif__logo{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    padding: 8px 0px;
+    box-shadow: 0px 0px 8px  white;
+    color: #dedede;
+    background-color: #828286;
+    border: #c5c5c5 solid 5px;
+}
+
+.play-bif__body{
+    flex-grow: 1;
+    margin: 8px 0px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.play-bif__body-title{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 8px 0px;
+}
+
+.play-bif__body-question{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.play-bif__body-question-hightlight{
+    color: #0481d1;
+    margin:0;
+}
+
+.play-bif__body-btn{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    margin: 8px 0px;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+}
+
+.play-bif__body-btn button{
+    width: 100%;
+    padding: 8px;
+    font-weight: bolder;
+    font-size: 1em;
+    color: black;
+    border-radius: 4px;
+    background-color: #fff;
+    border: black solid 3px;
+    cursor: pointer;
+}
+
+.play-bif__body-btn button:hover{
+    transform: scale(1.01);
+    box-shadow:0px 4px 8px grey;
+}
+.play-bif__body-btn button:active{
+    transform: scale(0.9);
+}
+
+
+.play-bif__body-btn p{
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1em;
+    color: white;
+    border-radius: 4px;
+}
+
+.play-bif__body-btn .bg-normal{
+    background-color: rgba(253, 253, 253, 0.35);
+    
+}
+
+.bg-correct {
+    background-color: rgb(11, 244, 42);
+}
+
+.bg-notcorrect {
+    background-color: rgb(253, 24, 24);
+}

@@ -1,0 +1,32 @@
+.ba-reven-clock__container{
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    font-size: 2em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ba-reven-clock__ring{
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+}
+
+
+.ba-reven-clock__bg{
+    position: absolute;
+    z-index: 2;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+
+}

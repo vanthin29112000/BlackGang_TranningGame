@@ -1,0 +1,46 @@
+.cell__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.cell__bg{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(10,10%);
+    box-sizing: border-box;
+    border: 5px solid black;
+    box-shadow: 0px 0px 16px grey;
+    background-color: #fff;
+
+}
+
+.cell{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 2px 4px;
+}
+
+.cell-number__big{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: #00b0f0;
+    margin: 0.5rem;
+    line-height: 1.3rem;
+}
+
+.cell-number__small{
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #8650af;
+    margin-bottom: 0;
+    line-height: 1.2rem;
+}
