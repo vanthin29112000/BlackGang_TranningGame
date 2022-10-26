@@ -1,0 +1,326 @@
+html,body {
+    width: 100vw;
+    height: 100vh;
+}
+
+*{
+    margin : 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.ba-raven__container{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/* ------------------- */
+
+/* Top : Question */
+
+.figure-out__top-content{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(to bottom, #944db0 21%, #9c30ff 85%);
+
+    /* background: linear-gradient(to bottom, #ff00ff 21%, #cc0099 85%); */
+}
+
+/* ------------------- */
+
+/* bottom  */
+.figure-out__bottom-content{
+    width: 100%;
+    height: 80vh;
+    background-color: #DCDFE2;
+    
+}
+
+/* ------------------- */
+
+.figure-out__body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.figure-out__body-bg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-out__body-content{
+    width: 100%;
+    height: calc(100% - 32px);
+    height: -moz-calc(100% - 32px);
+    height: -webkit-calc(100% - 32px);
+    margin : 16px 0px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.figure-out__body-content-timer-countPage{
+    width: 100%;
+    padding:0px 32px ;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.figure-out__body-content-countPage{
+    flex : 1 , 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.figure-out__body-content-countPage p{
+    font-size: 1.4em;
+    margin-left: 8px;
+    
+}
+
+.figure-out__body-content-title{
+    flex : 1 , 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+    color: black;
+}
+
+.figure-out__body-content-timer{
+    flex : 1 , 0;
+    display: flex;
+    justify-content: flex-end;
+}
+/* Question */
+.figure-out__body-list-question{
+    width: 100%;
+    height: calc(100% - 64px);
+    height: -moz-calc(100% - 64px);
+    height: -webkit-calc(100% - 64px);
+
+}
+
+.figure-out__question-item-bg{
+    width: 100%;
+    height: 100%;
+}
+
+.figure-out__body-list-question-bg{
+    width: 100%;
+    height: 88%;
+}
+
+.figure-out__body-question-item{
+    width: 100%;
+    height: 30%;
+    padding: 4px;
+}
+
+.figure-out__body-question-item-content{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.figure-out__body-question-item-question-bg{
+    width: 100%;
+    height: fit-content;
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-out__body-question-item-question-answer{
+    width: 250px;
+    height: fit-content;
+    margin-top: 8px;
+    text-align: center;
+}
+.figure-out__body-question-item-question-answer img{
+    margin: auto;
+}
+
+.figure-out__body-question-item-answer{
+    width: 205px;
+    height: 32px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.figure-out__body-question-item-answer p{
+    cursor: pointer;
+}
+
+.figure-out__body-question-item-answer p:hover{
+    font-weight: bolder;
+}
+
+.figure-out__body-question-result{
+    height: fit-content;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-out__body-question-result-true{
+    font-weight: bolder;
+    color: #b7e729;
+}
+.figure-out__body-question-result-false{
+    font-weight: bolder;
+    color: rgb(232, 8, 8);
+}
+
+.figure-out__body-title-finish{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-out__body-title-finish p{
+    margin-left: 8px;
+}
+
+.figure-out__body-button{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-out__body-button button{
+    width: 124px;
+    height: fit-content;
+    padding: 8px 4px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    margin: 0px 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px rgb(194, 194, 194);
+}
+
+.figure-out__body-button-back:hover, 
+.figure-out__body-button-next:hover{
+    background-color: #0033DE;
+    color: white;
+}
+
+.figure-out__body-button button:active{
+    transform: scale(0.9);
+    animation: transform 1 ease-in-out;
+}
+
+.figure-out__body-button-end{
+    background-color: #FF4F00;
+    color: white;
+}
+
+.figure-out__body-button-back i{
+    transform: rotate(180deg);
+}
+
+
+/* confirm  */
+.figure-out__confirm-bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background-color: rgba(149, 149, 149,0.75);
+}
+
+.figure-out__confirm-container{
+    width: fit-content;
+    height: 128px;
+    padding: 16px;
+    background-color: white;
+    position: relative;
+    border-radius: 16px;
+}
+
+.figure-out__confirm-btn-close{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.figure-out__confirm-btn-close:active{
+    transform: scale(0.9);
+}
+
+.figure-out__confirm-btn-close:hover{
+    color: red;
+}
+
+.figure-out__confirm-title{
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.figure-out__confirm-btn{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-out__confirm-btn-back,
+.figure-out__confirm-btn-accept{
+    width: 128px;
+    height: fit-content;
+    padding: 8px;
+    border: none;
+    box-shadow: 0px 0px 2px 0px rgb(225, 225, 225);
+    margin: 0px 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.figure-out__confirm-btn button:active{
+    transform: scale(0.9);
+}
+
+.figure-out__confirm-btn-back:hover{
+    background-color: #0033DE;
+    color: white;
+}
+
+.figure-out__confirm-btn-accept{
+    background-color: #FF4F00;
+    color: white;
+}

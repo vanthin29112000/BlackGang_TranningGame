@@ -1,0 +1,23 @@
+.number-finding{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding:0;
+}
+
+.number-finding__left,
+.number-finding__right{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.number-finding__left{
+    background-image: linear-gradient(to right, #fff, rgb(107, 103, 103));
+    padding: 0;
+}
+.number-finding__right{
+    background-image: linear-gradient(to right, rgb(107, 103, 103), #000 80%);
+    padding: 0;
+    opacity: 0.95;
+}

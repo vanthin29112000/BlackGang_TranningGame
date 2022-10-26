@@ -1,0 +1,53 @@
+.count-down{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(67, 67, 67);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-down__time{
+    width: 200px;
+    height: 200px;
+    font-size: 8em;
+    font-weight: bolder;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 
+.count-down__time-bg{
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.count-down__time-bg img{
+    border-radius: 50%;
+    width:100%;
+}
+
+.count-down__time-start{
+    
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    background-color: rgba(67, 67, 67);
+    color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

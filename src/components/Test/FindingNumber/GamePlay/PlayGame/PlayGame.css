@@ -1,0 +1,126 @@
+.play-game__container {
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+}
+
+.play-game__title {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    border: #fff solid 4px;
+    background-color: #8f9094;
+}
+
+.play-game__btn {
+    width: 100%;
+    height: calc(100% - 48px - 100px);
+    height: -moz-calc(100% - 48px - 100px);
+    height: -webkit-calc(100% - 48px - 100px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-game {
+    width: 164px;
+    height: 164px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: rgb(80, 79, 79);
+    cursor: pointer;
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 16px 0px white;
+
+}
+
+.start-game:active {
+    transform: scale(0.9);
+    transition: all 100ms linear;
+}
+
+.play-game__body {
+    margin-top: 32px;
+}
+
+.content {
+    font-size: 1.2em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highline {
+    display: inline;
+    font-size: 1.3em;
+    color: #0a78c1;
+    font-weight: bold;
+}
+
+.input-result {
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin: 16px 0px;
+    background-color: #8f9094;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    background-color: #8f9094;
+}
+
+.count-fail {
+    font-size: 1.2em;
+    color: white;
+}
+
+.count-fail__content {
+    display: inline;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.clock-bg {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-image-2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.logo-image-link {
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+    height: 100px;
+    width: 100px;
+    background-position: center;
+}
+/* .logo-image-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left,  black 50% , #2b2a2a );
+    opacity: 0.9;
+} */

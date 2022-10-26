@@ -1,0 +1,93 @@
+.left-right-game-result__bg{
+    width: 60vw;
+    text-align: center;
+    margin:auto;
+}
+.left-right-game-result__container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -1px 6px 8px 0px #9f9e9e;    
+    position: relative;
+    background-color: #fff;
+    border: black solid 3px;
+    padding: 32px 0px;
+}
+
+.left-right-game-result__title{
+    font-size: 1.5em;
+    margin: 8px 0px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.left-right-game-result__content{
+    margin: 8px 0px;
+    font-size:3em;
+} 
+
+.left-right-game-result__content-timer{
+    font-size: 1.5em;
+}
+
+
+.left-right-game-result__button:active{
+    opacity: 0.75;
+}
+
+.left-right-game-result__home-button{
+    font-size: 1.2em;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 8px 0px grey;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    border: black solid 3px;
+    width:200px;
+    text-align: center;
+}
+.left-right-game-result__again-button{
+    font-size: 1.2em;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 8px 0px grey;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    border: black solid 3px;
+    width:200px;
+    text-align: center;
+    
+}
+.left-right-game-result__again-button:active,
+.left-right-game-result__home-button:active{
+    transform: scale(0.95);
+}
+
+.left-right-game-list-result{
+    width: 80%;
+}
+
+.left-right-game-result-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns:10% 30% 30% 30%;
+}
+
+.left-right-game-result-item p{
+    font-size: 1.1rem;
+    margin: 4px 0px;
+    justify-self: center;
+}
+
+.left-right-game-result-current{
+    font-weight: bolder;
+}

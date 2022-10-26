@@ -84,7 +84,26 @@ const Menu = () => {
          link: "/baraven",
          picture: "/assets/img/game-img/BaRaven.jpg",
       },
+      {
+         id: 8,
+         name: "Test",
+         gameTutorial: [
+            {
+               id: 1,
+               tutor: "adjasqwjjknakasnknenjkncdsncknnensdmcsdcmsdcdscds.",
+            },
+            {
+               id: 2,
+               tutor: "adjasqwjjknakasnknenjkncdsncknnensdmcsdcmsdcdscds.",
+            },
+         ],
+         target: "asdfnascnaknakmclasmc;lacowml;cmdcsdcs",
+         menuLink: "test-intro",
+         link: "/test",
+         picture: "/assets/img/game-img/bai-test-cua-cong-ty-nhat.jpg",
+      },
    ];
+
    return (
       <div className="App">
          <div className="container menu-bg p-0">
@@ -113,7 +132,7 @@ const Menu = () => {
                               : "p-3 "
                         }
                         key={index}
-                        style={{ width: "calc(100% / 7)" }}
+                        style={{ width: "calc(100% / 8)" }}
                      >
                         <div className="card">
                            <NavLink to={gameItem.menuLink}>
