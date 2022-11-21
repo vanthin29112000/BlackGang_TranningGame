@@ -138,6 +138,7 @@ export function Interface() {
          timeFinish: { minutes, second },
          countCorrect: countCorrect,
          countQuestion: numberQuiz.total,
+         name: "Figure Draw Training",
       };
       dispatch(handleAddResult(tempObj));
       dispatch(handleNextGame());

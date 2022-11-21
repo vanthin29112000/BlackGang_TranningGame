@@ -18,6 +18,7 @@ export const Clock = ({ count, countTrue }) => {
             timeFinish: { minutes, second },
             countCorrect: countTrue,
             countQuestion: countQuestion,
+            name: "Raven Training",
          };
          dispatch(handleAddResult(tempObj));
          dispatch(handleNextGame());

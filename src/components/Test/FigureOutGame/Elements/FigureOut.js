@@ -46,6 +46,7 @@ export const FigureOut = () => {
          timeFinish: { minutes, second },
          countCorrect: amountTrue,
          countQuestion: amountQuestion,
+         name: "Figure Classification Training",
       };
       dispatch(handleAddResult(tempObj));
       dispatch(handleNextGame());

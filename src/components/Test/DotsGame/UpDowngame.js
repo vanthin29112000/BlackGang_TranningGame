@@ -77,6 +77,7 @@ const UpDownGame = () => {
             countCorrect: tempCorrect,
             countQuestion: tempAnswer,
             countInCorrect: tempInCorrect,
+            name: "Dots Training",
          };
          dispatch(handleAddResult(tempObj));
          dispatch(handleNextGame());
@@ -90,8 +91,11 @@ const UpDownGame = () => {
       let listAnswer = Array(ArrQuantity)
          .fill()
          .map(() => {
-            if (countTemp === 29) {
-               countTemp = 0;
+            if (
+               (countTemp === 31 && dotTemp === 4) ||
+               (countTemp === 29 && dotTemp !== 4)
+            ) {
+               countTemp = 1;
                dotTemp++;
             } else {
                countTemp++;

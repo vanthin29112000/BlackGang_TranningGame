@@ -25,7 +25,7 @@ export const Result = () => {
             <div className="ba-raven-result__container">
                <div className="ba-raven-result__bg grid-cs">
                   <div className="ba-raven-result__content row no-gutters">
-                     <div className="test-result__content-bg col c-12 m-8 l-6 ba-raven-result__content-bg-white">
+                     <div className="test-result__content-bg col c-12 m-10 l-8 ba-raven-result__content-bg-white">
                         <b>TEST RESULTS</b>
                         <div className="ba-raven-result__list">
                            <div className="ba-raven-result__list-indexing">
@@ -36,7 +36,7 @@ export const Result = () => {
                               <p className="ba-raven-result__list-indexing-border">
                                  Number of correct
                               </p>
-                              <p>Accuracy</p>
+                              <p>Scores</p>
                            </div>
 
                            <div className="ba-raven-result__list-content">
@@ -54,7 +54,7 @@ export const Result = () => {
                                           {/* {moment(ele.daySubmitted).format(
                                              "DD/MM/YYYY hh:mm"
                                           )} */}
-                                          Game {index + 1}
+                                          {ele.name}
                                        </p>
                                        <p>
                                           {("0" + ele.timeFinish.minutes).slice(
@@ -76,16 +76,13 @@ export const Result = () => {
                                                   ((ele.countCorrect -
                                                      ele.countInCorrect * 0.5) /
                                                      ele.countQuestion) *
-                                                     100 *
-                                                     100
+                                                     1000
                                                ) / 100
                                              : Math.round(
                                                   (ele.countCorrect /
                                                      ele.countQuestion) *
-                                                     100 *
-                                                     100
+                                                     1000
                                                ) / 100}
-                                          %
                                        </p>
                                     </div>
                                  ))}

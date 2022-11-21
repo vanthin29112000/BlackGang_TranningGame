@@ -46,6 +46,7 @@ export const BrickInFrame = () => {
          timeFinish: { minutes, second },
          countCorrect: countCorrect,
          countQuestion: countQuestion,
+         name: "Block In Fame Training",
       };
       dispatch(handleAddResult(tempObj));
       dispatch(handleNextGame());

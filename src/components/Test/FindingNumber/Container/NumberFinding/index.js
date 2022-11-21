@@ -56,6 +56,7 @@ export const NumberFinding = () => {
          countInCorrect: countFail,
          countCorrect: count,
          countQuestion: countMax,
+         name: "Number Finding Training",
       };
       dispatch(handleAddResult(tempObj));
       dispatch(handleNextGame());

@@ -50,6 +50,7 @@ export const RenderQuestion = () => {
          timeFinish: { minutes, second },
          countCorrect: countCorrect,
          countQuestion: countQuestion,
+         name: "Hands Training",
       };
       dispatch(handleAddResult(tempObj));
       dispatch(handleNextGame());
