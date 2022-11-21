@@ -14,6 +14,7 @@ import StartupCover from "./StartupCover";
 // import Timer from "../Timer";
 import "./UpDowngame.css";
 import { Clock } from "./ClockDotGame";
+import { shuffle } from "../LeftRightGame/seeder";
 const UpDownGame = () => {
    const limitedTime = 300;
 
@@ -61,8 +62,10 @@ const UpDownGame = () => {
          let tempCorrect = 0;
          let tempAnswer = 0;
          let tempTime = 0;
+         let tempInCorrect = 0;
          listResult.forEach((item) => {
             tempCorrect += item.correctAns;
+            tempInCorrect += item.incorrectAns;
             tempAnswer += item.totalAns;
             tempTime += item.endTime.minutes * 60 + item.endTime.second;
          });
@@ -73,6 +76,7 @@ const UpDownGame = () => {
             timeFinish: { minutes: tempMinute, second: tempSecond },
             countCorrect: tempCorrect,
             countQuestion: tempAnswer,
+            countInCorrect: tempInCorrect,
          };
          dispatch(handleAddResult(tempObj));
          dispatch(handleNextGame());
@@ -81,12 +85,26 @@ const UpDownGame = () => {
    }, [countRound]);
 
    const generateRandomArr = () => {
-      const listAnswer = Array(ArrQuantity)
+      let countTemp = 0;
+      let dotTemp = 1;
+      let listAnswer = Array(ArrQuantity)
          .fill()
-         .map(() => ({
-            value: Math.floor(6 * Math.random() + 1),
-            isChecked: false,
-         }));
+         .map(() => {
+            if (countTemp === 29) {
+               countTemp = 0;
+               dotTemp++;
+            } else {
+               countTemp++;
+            }
+
+            return {
+               // value: Math.floor(6 * Math.random() + 1),
+               value: dotTemp,
+               isChecked: false,
+            };
+         });
+      listAnswer = shuffle(listAnswer);
+
       const countAnswer = listAnswer.filter(
          (x) => x.value === findNumber
       ).length;

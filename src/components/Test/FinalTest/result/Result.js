@@ -71,12 +71,20 @@ export const Result = () => {
                                              : `${ele.countCorrect} / ${ele.countQuestion}`}
                                        </p>
                                        <p>
-                                          {Math.round(
-                                             (ele.countCorrect /
-                                                ele.countQuestion) *
-                                                100 *
-                                                100
-                                          ) / 100}
+                                          {ele.countInCorrect >= 0
+                                             ? Math.round(
+                                                  ((ele.countCorrect -
+                                                     ele.countInCorrect * 0.5) /
+                                                     ele.countQuestion) *
+                                                     100 *
+                                                     100
+                                               ) / 100
+                                             : Math.round(
+                                                  (ele.countCorrect /
+                                                     ele.countQuestion) *
+                                                     100 *
+                                                     100
+                                               ) / 100}
                                           %
                                        </p>
                                     </div>

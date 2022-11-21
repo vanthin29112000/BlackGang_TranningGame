@@ -33,7 +33,7 @@ const questionAndAnswer = [
    },
 ];
 shuffle(questionAndAnswer);
-const countQuestion = 100; //=> Số câu hỏi muốn trả lời
+const countQuestion = 3; //=> Số câu hỏi muốn trả lời
 const limitedTime = 300; //=> Thời gian thực hiện bài
 const arrayAnswer = { YES: true, No: false };
 
