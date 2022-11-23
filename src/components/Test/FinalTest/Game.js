@@ -12,8 +12,9 @@ import { updateLocalStorage } from "../Redux/Slice";
 export const Game = () => {
    const count = useSelector((state) => state.game.currentCount);
    const navigate = useNavigate();
-
+   const dispatch = useDispatch();
    useEffect(() => {
+      dispatch(updateLocalStorage());
       count === 8 && navigate("/");
    }, []);
 

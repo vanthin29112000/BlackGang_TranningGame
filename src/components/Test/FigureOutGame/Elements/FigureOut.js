@@ -85,12 +85,12 @@ export const FigureOut = () => {
          <div className="figure-out__top-content"></div>
          <div className="figure-out__bottom-content"></div>
          <div className="figure-out__body grid">
-            {confirm.isShowConfirm && (
+            {/* {confirm.isShowConfirm && (
                <FigureOutComfirm
                   isShowConfirm={isShowConfirm}
                   onAccept={onAccept}
                ></FigureOutComfirm>
-            )}
+            )} */}
             <div className="figure-out__body-bg row no-gutters">
                <div className="c-10 m-6 l-11 figure-out__body-content">
                   <div className="figure-out__body-content-timer-countPage">
@@ -117,6 +117,7 @@ export const FigureOut = () => {
                      onSaveResult={onSaveResult}
                      onCheckFinish={onCheckFinish}
                      isShowConfirm={isShowConfirm}
+                     onAccept={onAccept}
                   ></FigureOutQuestion>
                </div>
             </div>

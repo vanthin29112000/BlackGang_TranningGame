@@ -7,6 +7,7 @@ export const FigureOutQuestion = ({
    onSaveResult,
    onCheckFinish,
    isShowConfirm,
+   onAccept,
 }) => {
    const [pageNum, setPageNum] = useState(1);
    let pageEnd = Math.ceil(amountQuestion / 9);
@@ -85,9 +86,10 @@ export const FigureOutQuestion = ({
                {pageNum === pageEnd && (
                   <button
                      className="figure-out__body-button-end"
-                     onClick={() => {
-                        isShowConfirm(true);
-                     }}
+                     // onClick={() => {
+                     //    isShowConfirm(true);
+                     // }}
+                     onClick={onAccept}
                   >
                      Kết thúc
                   </button>

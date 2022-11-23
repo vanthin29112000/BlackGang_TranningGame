@@ -16,7 +16,7 @@ export const BaRaven = () => {
       resultTrue: -1,
    });
 
-   const timeShowResult = 1000; //Delay Show Result
+   const timeShowResult = 200; //Delay Show Result
    const data = dataImport;
 
    const onChoseAnswer = (answer) => {

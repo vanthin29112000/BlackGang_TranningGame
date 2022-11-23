@@ -206,7 +206,7 @@ export function Interface() {
          }
 
          setNumberQuiz({ current: nextQuiz, total: numberQuiz.total });
-      }, 1500);
+      }, 300);
    };
 
    const chooseAnswer = (idPoint) => {
