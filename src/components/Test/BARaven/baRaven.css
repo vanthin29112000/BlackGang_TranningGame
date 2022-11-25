@@ -68,7 +68,7 @@ html,body {
 }
 
 .ba-raven__slideIn {
-    animation: slideIn 1s ease-in-out 0s forwards;
+    animation: slideIn 0.3s ease-in-out 0s forwards;
 }
 
 .ba-raven__slideOut {
@@ -77,21 +77,21 @@ html,body {
 
 @keyframes slideIn{
     0% {
-        left : 100%;
+        opacity: 0; 
     }
 
     100% {
-        left: 0%; 
+        opacity: 1; 
     }
 }
 
 @keyframes slideOut{
     0% {
-        left : 0%;
+        opacity : 1;
     }
 
     100% {
-        left: -100%; 
+        opacity: 0; 
     }
 }
 

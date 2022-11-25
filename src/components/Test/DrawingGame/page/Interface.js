@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import { Sample } from "../Sample";
-import { answer } from "../database/Answer";
+import { answer } from "../../../DrawingGame/database/Answer";
 import { scoreQuiz, showAnswer } from "../function/testing";
 import { Clock } from "../layout/Clock";
 import { useDispatch } from "react-redux";
@@ -12,6 +12,7 @@ import {
 } from "../../Redux/Slice";
 
 export function Interface() {
+   const NUMBER_OF_QUESTION = 5
    const navigate = useNavigate();
    const resultRef = useRef();
    const dispatch = useDispatch();
@@ -129,7 +130,7 @@ export function Interface() {
 
    const [isSubmit, setIsSubmit] = useState(false);
    const [isFinish, setIsFinish] = useState(false);
-   const [numberQuiz, setNumberQuiz] = useState({ current: 1, total: 5 });
+   const [numberQuiz, setNumberQuiz] = useState({ current: 1, total: NUMBER_OF_QUESTION });
    const [countCorrect, setCountCorrect] = useState(0);
    const [isStop, setIsStop] = useState(false);
 

@@ -118,7 +118,7 @@ const renderData = () => {
    for (let i = 1; i <= section1Length; i++) {
       let tempObj = {
          id: i,
-         question: "Chọn hình khác với các hình còn lại",
+         question: "",
          questionImg: `assets/img/game-img/FigureOutGame/Section 1/${i}.png`,
          result: listResult[i - 1].result,
       };
@@ -128,7 +128,7 @@ const renderData = () => {
    for (let i = 1; i <= 50; i++) {
       let tempObj = {
          id: j,
-         question: "Chọn hình khác với các hình còn lại",
+         question: "",
          questionImg: `assets/img/game-img/FigureOutGame/Section 2/${i}.png`,
          result: listResult[j - 1].result,
       };

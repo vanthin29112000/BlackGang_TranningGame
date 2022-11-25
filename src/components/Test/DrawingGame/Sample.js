@@ -1,5 +1,5 @@
 import React from "react";
-import { answer } from "./database/Answer";
+import { answer } from "../../DrawingGame/database/Answer";
 
 export function Sample({ id }) {
   return (

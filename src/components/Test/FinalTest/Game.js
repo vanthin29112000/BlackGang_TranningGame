@@ -8,13 +8,13 @@ import { Interface } from "../DrawingGame/page/Interface";
 import { FigureOut } from "../FigureOutGame/Elements/FigureOut";
 import { NumberFinding } from "../FindingNumber/Container/NumberFinding";
 import { RenderQuestion } from "../LeftRightGame/renderQuestion";
-import { updateLocalStorage } from "../Redux/Slice";
+import { updatesessionStorage } from "../Redux/Slice";
 export const Game = () => {
    const count = useSelector((state) => state.game.currentCount);
    const navigate = useNavigate();
    const dispatch = useDispatch();
    useEffect(() => {
-      dispatch(updateLocalStorage());
+      dispatch(updatesessionStorage());
       count === 8 && navigate("/");
    }, []);
 

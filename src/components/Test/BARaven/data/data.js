@@ -1,4 +1,4 @@
-const { shuffle } = require("../../LeftRightGame/seeder");
+// const { shuffle } = require("../../LeftRightGame/seeder");
 
 let results = [
    {
@@ -314,14 +314,14 @@ const renderData = () => {
          tempArr.push(tempObjItem);
       }
 
-      tempObj.answers = shuffle(tempArr);
+      tempObj.answers = tempArr;
 
       tempData.push(tempObj);
    }
    return tempData;
 };
 
-dataImport = shuffle(renderData());
+dataImport = renderData();
 
 // ====================
 

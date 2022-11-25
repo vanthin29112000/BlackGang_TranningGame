@@ -1,5 +1,5 @@
 const { shuffle } = require("../seeder");
-const countMax = 100;
+const countMax = 64;
 // Cell
 let cell = [];
 const renderCell = () => {

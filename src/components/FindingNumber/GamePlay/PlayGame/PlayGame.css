@@ -55,9 +55,9 @@
 
 .highline {
     display: inline;
-    font-size: 1.3em;
-    color: #0a78c1;
+    font-size: 1.8rem;
     font-weight: bold;
+    color: aquamarine;
 }
 
 .input-result {
