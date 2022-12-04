@@ -40,27 +40,40 @@
 // //       origin: "b8",
 // //       answer: ["d6", "i8", "i5", "j2"],
 // //    },
+
+import { question_test } from "../../../../Data/DrawingGame/Ques&Ans";
+import {
+   isShuffle_test,
+   limitedTime_test,
+} from "../../../../Data/DrawingGame/SettingGame";
+
 // // ];
+const Answer = question_test;
+function shuffle(array) {
+   let currentIndex = array.length,
+      randomIndex;
 
-// function shuffle(array) {
-//    let currentIndex = array.length,
-//       randomIndex;
+   // While there remain elements to shuffle.
+   while (currentIndex !== 0) {
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
 
-//    // While there remain elements to shuffle.
-//    while (currentIndex !== 0) {
-//       // Pick a remaining element.
-//       randomIndex = Math.floor(Math.random() * currentIndex);
-//       currentIndex--;
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+         array[randomIndex],
+         array[currentIndex],
+      ];
+   }
 
-//       // And swap it with the current element.
-//       [array[currentIndex], array[randomIndex]] = [
-//          array[randomIndex],
-//          array[currentIndex],
-//       ];
-//    }
+   return array;
+}
 
-//    return array;
-// }
+export let answer = [];
+if (isShuffle_test) {
+   answer = shuffle(Answer);
+} else {
+   answer = Answer;
+}
 
-// export const answer = shuffle(Answer);
-export const limitedTime = 420;
+export const limitedTime = limitedTime_test;

@@ -11,7 +11,7 @@ const MenuItem = () => {
    }, []);
 
    const onResetGame = () => {
-      console.log("reset game");
+      // console.log("reset game");
       dispatch(resetGame());
    };
 

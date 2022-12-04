@@ -15,8 +15,13 @@ import StartupCover from "./StartupCover";
 import "./UpDowngame.css";
 import { Clock } from "./ClockDotGame";
 import { shuffle } from "../LeftRightGame/seeder";
+import {
+   countRound_test,
+   limitedTime_test,
+} from "../../../Data/DotsGame/SettingGame";
+import { Logo } from "../../../layout/Logo";
 const UpDownGame = () => {
-   const limitedTime = 300;
+   const limitedTime = limitedTime_test;
 
    const playerName = sessionStorage.getItem("playerName");
    const [findNumber, setFindNumber] = useState(4);
@@ -33,13 +38,15 @@ const UpDownGame = () => {
    const [answers, setAnswers] = useState([]);
    const [isStop, setIsStop] = useState(false);
    // let SavedResult = JSON.parse(sessionStorage.getItem("savedResult")) || [];
+
    const ArrQuantity = 176;
+
    const timeRef = useRef(0);
    const navigate = useNavigate();
    const dispatch = useDispatch();
 
    const onNextRound = (minutes, second) => {
-      if (countRound <= 5) {
+      if (countRound <= countRound_test) {
          setIsStop(false);
          setCountRound(countRound + 1);
 
@@ -286,24 +293,17 @@ const UpDownGame = () => {
                      </div>
                   </div>
                   <div className=" cus-pos">
-                     {/* <NavLink to="/"> */}
-                     <div
-                        style={{
-                           height: "150px",
-                           width: "150px",
-                           marginBottom: "16px",
-                           display: "flex",
-                           justifyContent: "center",
-                        }}
-                     >
-                        <img
-                           className="logo-image "
-                           src="assets/img/DatLaptoplogo.png"
-                           alt=".png"
-                           style={{ position: "relative" }}
-                        ></img>
+                     <div style={{ width: "100%", height: "128px" }}>
+                        <div
+                           style={{
+                              width: "128px",
+                              height: "128px",
+                              margin: "0 auto",
+                           }}
+                        >
+                           <Logo></Logo>
+                        </div>
                      </div>
-                     {/* </NavLink> */}
 
                      <p className="d-flex m-0 p-0 justify-content-center align-items-center text-white fw-normal fs-5">
                         Find number: &nbsp;

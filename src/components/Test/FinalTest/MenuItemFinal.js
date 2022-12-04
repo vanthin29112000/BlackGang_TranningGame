@@ -6,7 +6,7 @@ export const MenuItemFinal = ({ gameList, index }) => {
    const dispatch = useDispatch();
    const isShowResult = useSelector((state) => state.game.isShowResult);
    const onResetGame = () => {
-      console.log("reset game");
+      // console.log("reset game");
       dispatch(resetGame());
    };
 

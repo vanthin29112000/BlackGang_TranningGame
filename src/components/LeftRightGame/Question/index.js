@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { timeShowResult_training } from "../../../Data/LeftRightGame/SettingGame";
 import "./quizGame.css";
 
 export const Question = ({ showSentence, question, checkResultAndSave }) => {
@@ -36,7 +37,7 @@ export const Question = ({ showSentence, question, checkResultAndSave }) => {
                              setTimeout(() => {
                                 checkResultAndSave(index, showSentence);
                                 setSelectedSentence(-1);
-                             }, 300);
+                             }, timeShowResult_training);
                           }}
                        >
                           <p>{ele}</p>

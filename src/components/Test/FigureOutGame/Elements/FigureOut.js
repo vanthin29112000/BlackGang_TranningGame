@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { amountQuestion, dataImport, setRanking } from "../Data/data";
+import { amountQuestion, dataImport } from "../Data/data";
 import { Clock } from "../Layout/Clock";
 import "./FigureOut.css";
-import { FigureOutComfirm } from "./FigureOutComfirm/FigureOutComfirm";
+// import { FigureOutComfirm } from "./FigureOutComfirm/FigureOutComfirm";
 import { FigureOutQuestion } from "./FigureOutQuestion/FigureOutQuestion";
 import { useDispatch } from "react-redux";
 import "./grid.css";
 import { handleAddResult, handleNextGame } from "../../Redux/Slice";
+import { Logo } from "../../../../layout/Logo";
 export const FigureOut = () => {
    const dispatch = useDispatch();
    const navigate = useNavigate();
@@ -95,6 +96,15 @@ export const FigureOut = () => {
                <div className="c-10 m-6 l-11 figure-out__body-content">
                   <div className="figure-out__body-content-timer-countPage">
                      <div className="figure-out__body-content-countPage">
+                        <div
+                           style={{
+                              width: "64px",
+                              height: "64px",
+                              marginRight: "16px",
+                           }}
+                        >
+                           <Logo></Logo>
+                        </div>
                         <b>HOÀN THÀNH : </b>
                         <p>
                            {amountFinish} / {amountQuestion}

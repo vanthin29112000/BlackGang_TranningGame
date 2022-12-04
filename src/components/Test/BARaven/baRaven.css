@@ -35,6 +35,8 @@ html,body {
     z-index: 2;
 }   
 
+
+
 /* ------------------- */
 
 /* bottom  */
@@ -120,17 +122,20 @@ html,body {
 }
 
 .ba-raven__question-counter{
+    height: fit-content;
+
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 16px;
     flex-grow: 1;
 }
 
 .ba-raven__question-item{
-    width: 80%;
+    width: 406px;
+    height: 203px;
+    /* width: 80%;
     height: calc(100%-42px);
     height: -moz-calc(100% - 42px);
-    height: -webkit-calc(100% - 42px);
+    height: -webkit-calc(100% - 42px); */
     /* object-fit: cover; */
     flex-grow: 1;
 }
@@ -183,8 +188,9 @@ html,body {
 }
 
 .ba-raven__answer-img{
-    width: 50%;
-    object-fit: cover;
+    width: 155px;
+    height: 84px;
+    /* object-fit:fill; */
     opacity: 0.75;
 }
 

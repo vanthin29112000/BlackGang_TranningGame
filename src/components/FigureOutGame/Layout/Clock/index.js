@@ -14,7 +14,7 @@ export const Clock = ({ isStopTime, onFinishGame }) => {
 
          let tempMinute = Math.floor(timeFinishSecond / 60);
          let tempSecond = timeFinishSecond - tempMinute * 60;
-         console.log(tempMinute, tempSecond);
+         // console.log(tempMinute, tempSecond);
          onFinishGame(tempMinute, tempSecond);
       }
    }, [isStopTime, minutes, second]);

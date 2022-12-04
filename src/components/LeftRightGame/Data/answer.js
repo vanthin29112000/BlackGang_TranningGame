@@ -5,6 +5,7 @@ const addNewRanking = (newRank) => {
 };
 
 const getRanking = () => {
+   // console.log(ranking);
    return ranking;
 };
 

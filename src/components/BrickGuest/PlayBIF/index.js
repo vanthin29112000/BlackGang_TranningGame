@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { timeShowResult_training } from "../../../Data/BrickGuest/SettingGame";
 import { arrayAnswer, countQuestion } from "../Data/Question";
 import "./PlayBIF.css";
 export const PlayBIF = ({ question, index, countAnswer, nextQuestion }) => {
@@ -7,17 +8,18 @@ export const PlayBIF = ({ question, index, countAnswer, nextQuestion }) => {
    const [showResult, setShowResult] = useState(false);
    const [correct, setCorrect] = useState(true);
 
+   const timeShowResult = timeShowResult_training;
    let temp = question.result === countAnswer;
    useEffect(() => {
       if (answer !== "") {
          setShowResult(true);
-         console.log("result", temp, answer);
+         // console.log("result", temp, answer);
          if (temp !== answer) {
             setCorrect(false);
          }
          setTimeout(() => {
             nextQuestion(answer);
-         }, 500);
+         }, timeShowResult);
       }
    }, [answer]);
 

@@ -3,6 +3,7 @@ import { Clock } from "../../Layout/Clock";
 import { NavLink } from "react-router-dom";
 
 import "./PlayGame.css";
+import { Logo } from "../../../../../layout/Logo";
 export const PlayGame = ({
    start,
    index,
@@ -40,13 +41,17 @@ export const PlayGame = ({
    return (
       <>
          <div className="play-game__container">
-            {/* <NavLink className="logo-image-2" to="/"> */}
-            <img
-               className="logo-image-link logo-image-2"
-               src="../assets/img/DatLaptoplogodark.png"
-               alt="Logo.png"
-            ></img>
-            {/* </NavLink> */}
+            <div style={{ width: "100%", height: "96px" }}>
+               <div
+                  style={{
+                     width: "96px",
+                     height: "96px",
+                     margin: "0 auto",
+                  }}
+               >
+                  <Logo></Logo>
+               </div>
+            </div>
             <p className="play-game__title">NUMBER FINDING</p>
             {start ? (
                <div className="play-game__body">
