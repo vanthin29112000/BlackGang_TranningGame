@@ -4,6 +4,8 @@ import { Clock } from "./Layout/Clock";
 import "./baRaven.css";
 import { BaravenAnswer } from "./BaravenAnswer";
 import "./grid.css";
+import { timeShowResult_test } from "../../../Data/BARaven/SettingGame";
+import { Logo } from "../../../layout/Logo";
 export const BaRaven = () => {
    const [isStart, setIsStart] = useState(false);
    const [slideIn, setSlideIn] = useState(true);
@@ -16,7 +18,7 @@ export const BaRaven = () => {
       resultTrue: -1,
    });
 
-   const timeShowResult = 200; //Delay Show Result
+   const timeShowResult = timeShowResult_test; //Delay Show Result
    const data = dataImport;
 
    const onChoseAnswer = (answer) => {
@@ -58,6 +60,28 @@ export const BaRaven = () => {
       // <div className="ba-raven__container">
       <>
          <div className="ba-raven__top-content">
+            <div
+               style={{
+                  width: "128px",
+                  height: "128px",
+                  position: "absolute",
+                  left: "calc((100vw /12))",
+                  bottom: "-74px",
+                  zIndex: "2",
+               }}
+            >
+               <div
+                  style={{
+                     width: "128px",
+                     height: "128px",
+                     margin: "0 auto",
+                     border: "1px solid black",
+                     borderRadius: "100px",
+                  }}
+               >
+                  <Logo></Logo>
+               </div>
+            </div>
             <div className="ba-raven__top-content-clock">
                {!isStart && (
                   <Clock count={count} countTrue={countCorrect}></Clock>

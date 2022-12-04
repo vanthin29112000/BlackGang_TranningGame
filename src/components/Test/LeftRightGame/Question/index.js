@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Logo } from "../../../../layout/Logo";
 import "./quizGame.css";
 
 export const Question = ({ showSentence, question, checkResultAndSave }) => {
@@ -8,13 +9,27 @@ export const Question = ({ showSentence, question, checkResultAndSave }) => {
 
    return (
       <>
-         {/* <NavLink to="/"> */}
-         <img
-            className="logo-image"
-            src="../assets/img/DatLaptoplogo.png"
-            alt="Logo.png"
-         ></img>
-         {/* </NavLink> */}
+         <div
+            style={{
+               width: "148px",
+               height: "148px",
+               position: "absolute",
+               top: "calc(100vh / 3)",
+               left: "calc(100vw / 6)",
+            }}
+         >
+            <div
+               style={{
+                  width: "148px",
+                  height: "148px",
+                  margin: "0 auto",
+                  border: "1px solid black",
+                  borderRadius: "100px",
+               }}
+            >
+               <Logo></Logo>
+            </div>
+         </div>
          <div className="hand-quiz-game__bg showSlide">
             <img src={question.image} alt=".png"></img>
             <div className="number-question">

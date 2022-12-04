@@ -13,7 +13,7 @@ const Clock = ({ stopGame, finishGame }) => {
 
          let tempMinute = Math.floor(timeFinishSecond / 60);
          let tempSecond = timeFinishSecond - tempMinute * 60;
-         console.log(tempMinute, tempSecond);
+         // console.log(tempMinute, tempSecond);
          finishGame(tempMinute, tempSecond);
       }
       // if (stopGame) {

@@ -1,5 +1,8 @@
+const {
+   countQuestion_training,
+} = require("../../../Data/FindingNumber/SettingGame");
 const { shuffle } = require("../seeder");
-const countMax = 100;
+const countMax = countQuestion_training;
 // Cell
 let cell = [];
 const renderCell = () => {
@@ -55,7 +58,7 @@ const saveResult = (countFail, minutes, seconds) => {
       dateSubmit: new Date(),
    };
    ranking.unshift(result);
-   console.log(ranking);
+   // console.log(ranking);
 };
 module.exports = {
    cell,

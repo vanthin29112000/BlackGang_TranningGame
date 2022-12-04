@@ -1,17 +1,17 @@
 import { useParams, NavLink } from "react-router-dom";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { resetGame, updateLocalStorage } from "./Test/Redux/Slice";
+import { resetGame, updatesessionStorage } from "./Test/Redux/Slice";
 const MenuItem = () => {
    const dispatch = useDispatch();
    const isShowResult = useSelector((state) => state.game.isShowResult);
 
    useEffect(() => {
-      dispatch(updateLocalStorage());
+      dispatch(updatesessionStorage());
    }, []);
 
    const onResetGame = () => {
-      console.log("reset game");
+      // console.log("reset game");
       dispatch(resetGame());
    };
 

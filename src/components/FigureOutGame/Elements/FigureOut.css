@@ -63,7 +63,7 @@ html,body {
     height: -moz-calc(100% - 32px);
     height: -webkit-calc(100% - 32px);
     margin : 16px 0px;
-    padding: 16px;
+    padding: 8px;
     background-color: white;
     border-radius: 16px;
     background: linear-gradient(to left, #000, #fff 100%);

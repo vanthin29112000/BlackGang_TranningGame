@@ -68,7 +68,7 @@
     word-break: break-word;
     line-height: 48px;
     flex: 1 0;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 600;
 }
 
@@ -102,11 +102,11 @@
     justify-content: center;
     align-items: center;
     flex: row wrap;
-    background-color: #551b8c;
+    background-color: #737373;
 }
 
 .ba-raven-result__list-item-1{
-    background-color: #9C30ff;
+    background-color: black;
 }
 
 .ba-raven-result__list-item p,.ba-raven-result__list-item-1 p{

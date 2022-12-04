@@ -4,7 +4,7 @@ const HistoryResult = () => {
    const navigate = useNavigate();
    const HistoryResult =
       JSON.parse(sessionStorage.getItem("savedResult")) || [];
-   console.log(HistoryResult);
+   // console.log(HistoryResult);
    return (
       // <div className="dotsgame-result-game__bg">
       <>

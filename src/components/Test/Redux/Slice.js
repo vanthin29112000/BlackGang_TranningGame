@@ -56,35 +56,35 @@ const infoGameSlice = createSlice({
    reducers: {
       handleAddResult: (state, actions) => {
          state.result.push(actions.payload);
-         localStorage.setItem("result", JSON.stringify(state.result));
+         sessionStorage.setItem("result", JSON.stringify(state.result));
       },
       handleNextGame: (state, actions) => {
          if (state.currentCount + 1 > 8) {
             state.currentCount = 1;
-            localStorage.setItem("currentCount", state.currentCount);
+            sessionStorage.setItem("currentCount", state.currentCount);
          } else {
             state.currentCount += 1;
-            localStorage.setItem("currentCount", state.currentCount);
+            sessionStorage.setItem("currentCount", state.currentCount);
          }
       },
       handleIsShowResult: (state, actions) => {
          state.isShowResult = true;
-         localStorage.setItem("isShowResult", true);
+         sessionStorage.setItem("isShowResult", true);
       },
-      updateLocalStorage: (state, actions) => {
+      updatesessionStorage: (state, actions) => {
          state.currentCount =
-            JSON.parse(localStorage.getItem("currentCount")) || 1;
-         state.result = JSON.parse(localStorage.getItem("result")) || [];
+            JSON.parse(sessionStorage.getItem("currentCount")) || 1;
+         state.result = JSON.parse(sessionStorage.getItem("result")) || [];
          state.isShowResult =
-            JSON.parse(localStorage.getItem("isShowResult")) || false;
+            JSON.parse(sessionStorage.getItem("isShowResult")) || false;
       },
       resetGame: (state, actions) => {
          state.currentCount = 1;
          state.result = [];
          state.isShowResult = false;
-         localStorage.removeItem("result");
-         localStorage.removeItem("currentCount");
-         localStorage.removeItem("isShowResult");
+         sessionStorage.removeItem("result");
+         sessionStorage.removeItem("currentCount");
+         sessionStorage.removeItem("isShowResult");
       },
    },
 });
@@ -92,7 +92,7 @@ const infoGameSlice = createSlice({
 export const {
    handleAddResult,
    handleNextGame,
-   updateLocalStorage,
+   updatesessionStorage,
    handleIsShowResult,
    resetGame,
 } = infoGameSlice.actions;

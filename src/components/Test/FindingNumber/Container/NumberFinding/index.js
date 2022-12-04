@@ -25,7 +25,7 @@ export const NumberFinding = () => {
 
    const shuffleCell = () => {
       const temp = shuffle(getCell());
-      console.log(temp);
+      // console.log(temp);
       setCell([...temp]);
    };
 
